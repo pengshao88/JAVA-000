@@ -1,0 +1,8 @@
+在本地机器执行GCLogAnalysis程序：
+1、ParallelGC、4gXmx条件下，平均能生成2W的对象。
+2、CMS GC、4gXmx条件下，平均只能生成1.6W的对象。
+3、SerialGC、4gXmx条件下，平均只能生成1.3W的对象。
+CMS GC明显在吞吐量上弱一些。
+
+
+
