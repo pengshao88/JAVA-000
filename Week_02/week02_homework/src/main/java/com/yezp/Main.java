@@ -11,8 +11,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        JSONObject json;
-        String url = "http://localhost:8801";
+//        JSONObject json;
+        String url = "http://localhost:8801/test";
         Map<String, String> paraMap = new HashMap<String, String>();
 
         try {
@@ -21,8 +21,8 @@ public class Main {
                 System.out.println("result is empty.");
             }
 
-            json = JSONObject.parseObject(result);
-            System.out.println(json);
+//            json = JSONObject.parseObject(result);
+            System.out.println(result);
         } catch (Exception e) {
             e.printStackTrace();
         }
