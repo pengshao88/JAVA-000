@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
 
 //        JSONObject json;
-        String url = "http://localhost:8801/test";
+        String url = "http://localhost:8801";
         Map<String, String> paraMap = new HashMap<String, String>();
 
         try {
