@@ -38,10 +38,36 @@ public class Main {
         // 使用CyclicBarrier
         // end = useCyclicBarrier();
 
-        useThreadJoin();
+        // 使用join
+        // end = useThreadJoin();
+
+        // 使用wait notify
+        end = useObjectWaitAndNotify();
 
         // 然后退出main线程
         System.out.println("使用时间：" + (end - start) + " ms");
+    }
+
+    private static long useObjectWaitAndNotify() {
+        List<Integer> list = new ArrayList<>(1);
+        Thread thread = new Thread(() -> {
+            synchronized (list) {
+                list.add(sum());
+                list.notify();
+            }
+        });
+        thread.start();
+
+        try {
+            synchronized (list) {
+                list.wait();
+            }
+            // 确保  拿到result 并输出
+            System.out.println("useObjectWaitAndNotify 异步计算结果为：" + list.get(0));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return System.currentTimeMillis();
     }
 
     private static long useThreadJoin() {
@@ -60,11 +86,11 @@ public class Main {
     }
 
     private static long useCyclicBarrier() {
-        CyclicBarrier cyclicBarrier = new CyclicBarrier(1);
+        CyclicBarrier cyclicBarrier = new CyclicBarrier(2);
         Thread thread = new Thread(() -> {
             try {
                 // 确保  拿到result 并输出
-                System.out.println("useSemaphore 异步计算结果为：" + sum());
+                System.out.println("useCyclicBarrier 异步计算结果为：" + sum());
 
                 cyclicBarrier.await();
             } catch (InterruptedException e) {
@@ -74,6 +100,14 @@ public class Main {
             }
         });
         thread.start();
+
+        try {
+            cyclicBarrier.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (BrokenBarrierException e) {
+            e.printStackTrace();
+        }
         return System.currentTimeMillis();
     }
 
