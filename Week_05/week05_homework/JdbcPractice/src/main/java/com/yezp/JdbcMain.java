@@ -27,7 +27,10 @@ public class JdbcMain {
         System.out.println("update stephen age to 29 : " + userDao.updateUser(stephen));
 
         System.out.println("delete tom : " + userDao.deleteUser(tom.getId()));
-        System.out.println("insert user name : tom " + userDao.addUser(tom));
+        System.out.println("findUser by name tom : " + userDao.findUserByName("tom"));
+
+        JdbcManager jdbcManager = (JdbcManager) context.getBean("jdbcManager");
+        jdbcManager.close();
     }
 
 }

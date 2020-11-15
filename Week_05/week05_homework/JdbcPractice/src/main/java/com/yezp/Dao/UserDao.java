@@ -80,7 +80,7 @@ public class UserDao {
         try {
             String sql = "SELECT * FROM USER WHERE name=?";
             pstmt = jdbcManager.getConn().prepareStatement(sql);
-            pstmt.setNString(1, name);
+            pstmt.setString(1, name);
 
             rs = pstmt.executeQuery();
             if(rs == null) {

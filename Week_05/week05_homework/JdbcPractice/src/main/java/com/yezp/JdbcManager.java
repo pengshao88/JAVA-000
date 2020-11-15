@@ -29,7 +29,7 @@ public class JdbcManager {
         String driverClassName = "com.mysql.jdbc.Driver";	//启动驱动
         String url = "jdbc:mysql://localhost:3306/test";	//设置连接路径
         String username = "root";	//数据库用户名
-        String password = "";	//数据库连接密码
+        String password = "123456";	//数据库连接密码
 
         try {
             Class.forName(driverClassName); //执行驱动
