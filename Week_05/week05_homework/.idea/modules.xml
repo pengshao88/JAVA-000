@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hikaridemo/HikariDemo.iml" filepath="$PROJECT_DIR$/hikaridemo/HikariDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/JdbcPractice/JdbcPractice.iml" filepath="$PROJECT_DIR$/JdbcPractice/JdbcPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProxyDemo/ProxyDemo.iml" filepath="$PROJECT_DIR$/ProxyDemo/ProxyDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBean/SpringBean.iml" filepath="$PROJECT_DIR$/SpringBean/SpringBean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-school-starter/spring-school-starter.iml" filepath="$PROJECT_DIR$/spring-school-starter/spring-school-starter.iml" />
     </modules>
   </component>
 </project>

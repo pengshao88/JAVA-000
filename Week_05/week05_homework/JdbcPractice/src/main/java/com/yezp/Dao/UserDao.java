@@ -5,9 +5,9 @@ import com.yezp.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Description:
@@ -22,7 +22,7 @@ public class UserDao {
     private JdbcManager jdbcManager;
 
     public boolean addUser(User user) {
-        PreparedStatement pstmt = null;
+        PreparedStatement pstmt;
         String sql = "INSERT INTO USER VALUES(?, ?, ?)"; //设置的预编译语句格式
 
         try {
@@ -58,7 +58,7 @@ public class UserDao {
     }
 
     public boolean deleteUser(int id) {
-        PreparedStatement pstmt = null;
+        PreparedStatement pstmt;
         String sql = "DELETE FROM USER WHERE ID = ?";
 
         try {
@@ -74,8 +74,8 @@ public class UserDao {
     }
 
     public User findUserByName(String name) {
-        PreparedStatement pstmt = null;
-        ResultSet rs = null;
+        PreparedStatement pstmt;
+        ResultSet rs;
 
         try {
             String sql = "SELECT * FROM USER WHERE name=?";
@@ -98,6 +98,97 @@ public class UserDao {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public List<User> getUserList() {
+        Statement statement;
+        List<User> userList = new ArrayList<>();
+
+        try {
+            statement = jdbcManager.getConn().createStatement();
+            String sql = "SELECT id, name, age FROM USER";
+            ResultSet resultSet = statement.executeQuery(sql);
+
+            while (resultSet.next()){
+                int id = resultSet.getInt("id");
+                //获取字符串类型的值
+                String name = resultSet.getString("name");
+                //获取int型的值
+                int age = resultSet.getInt("age");
+                User user = new User(id, name, age);
+                userList.add(user);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return userList;
+    }
+
+    public boolean addUser(int id, String name, int age) {
+        Statement statement;
+
+        try {
+            statement = jdbcManager.getConn().createStatement();
+            String sql = "INSERT INTO USER (ID, `NAME`, AGE) VALUE (" + id + ",'" + name + "'," + age +")";
+            statement.executeUpdate(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+
+    public boolean updateUser(int id, String name, int age) {
+        Statement statement;
+
+        try {
+            statement = jdbcManager.getConn().createStatement();
+            String sql = "UPDATE USER SET `NAME` = '" + name + "', AGE = " + age + " WHERE ID = " + id;
+            statement.executeUpdate(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+
+    public boolean deleteUserBy(int id) {
+        Statement statement;
+        String sql = "DELETE FROM USER WHERE ID = " + id;
+
+        try {
+            statement = jdbcManager.getConn().createStatement();
+            statement.executeUpdate(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+
+        return true;
+    }
+
+    public boolean batchAddUser(List<User> userList) {
+        try {
+            Connection connection = jdbcManager.getConn();
+            Statement statement = connection.createStatement();
+            for (User user : userList) {
+                String sql = "INSERT INTO USER (ID, `NAME`, AGE) VALUE ("
+                        + user.getId() + ",'" + user.getName() + "'," + user.getAge() + ")";
+                statement.addBatch(sql);
+            }
+
+            // 开启事务
+            connection.setAutoCommit(false);
+            // 批处理
+            statement.executeBatch();
+            connection.commit();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+
+        return true;
     }
 
 }

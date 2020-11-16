@@ -5,6 +5,9 @@
       <list>
         <option value="$PROJECT_DIR$/SpringBean/pom.xml" />
         <option value="$PROJECT_DIR$/JdbcPractice/pom.xml" />
+        <option value="$PROJECT_DIR$/hikaridemo/pom.xml" />
+        <option value="$PROJECT_DIR$/ProxyDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-school-starter/pom.xml" />
       </list>
     </option>
   </component>
