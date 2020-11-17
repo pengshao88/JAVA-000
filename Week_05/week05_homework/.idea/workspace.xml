@@ -1,98 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/spring-school-starter/pom.xml" description="&lt;/build&gt;" line="35" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cea2f7ef-9b71-49ad-b4c3-29a63aee9a0a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../school-starter-test/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../school-starter-test/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../school-starter-test/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../school-starter-test/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../school-starter-test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../school-starter-test/school-starter-test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../school-starter-test/src/main/java/com/yezp/SchoolStarterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../school-starter-test/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_13_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProxyDemo/ProxyDemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProxyDemo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProxyDemo/src/main/java/com/yezp/IUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProxyDemo/src/main/java/com/yezp/ProxyApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProxyDemo/src/main/java/com/yezp/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProxyDemo/src/main/java/com/yezp/UserDaoProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hikaridemo/HikariDemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hikaridemo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hikaridemo/src/main/java/com/yezp/DataSourceDemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hikaridemo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-school-starter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-school-starter/spring-school-starter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/ISchool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/Klass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/School.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/SchoolAutoConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/SchoolProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-school-starter/src/main/resources/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-school-starter/src/main/resources/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-school-starter/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../school-starter-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../school-starter-test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../school-starter-test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../school-starter-test/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JdbcPractice/src/main/java/com/yezp/Dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/JdbcPractice/src/main/java/com/yezp/Dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JdbcPractice/src/main/java/com/yezp/JdbcMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/JdbcPractice/src/main/java/com/yezp/JdbcMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JdbcPractice/target/classes/com/yezp/Dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/JdbcPractice/target/classes/com/yezp/Dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JdbcPractice/target/classes/com/yezp/JdbcMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/JdbcPractice/target/classes/com/yezp/JdbcMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-school-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-school-starter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/SchoolAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/SchoolAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-school-starter/src/main/resources/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-school-starter/target/classes/com/yezp/SchoolAutoConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-school-starter/target/classes/com/yezp/SchoolAutoConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-school-starter/target/classes/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-school-starter/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-school-starter/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-school-starter/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/spring-school-starter/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-school-starter/target/spring-school-starter-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/SpringBean/target/" />
@@ -114,8 +39,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-school-starter/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="240">
+              <caret line="29" selection-start-line="29" selection-end-line="34" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/resources/META-INF/spring-configuration-metadata.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -123,20 +57,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/SchoolAutoConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="15" column="40" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-44">
+              <caret line="21" column="98" selection-start-line="21" selection-start-column="98" selection-end-line="21" selection-end-column="98" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/resources/spring.factories">
+        <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/resources/META-INF/spring.factories">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
-              <caret line="1" column="32" lean-forward="true" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -144,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/SchoolProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="88">
+              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
               <folding>
                 <element signature="e#336#337#0" expanded="true" />
                 <element signature="e#364#365#0" expanded="true" />
@@ -172,10 +103,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/Klass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
+            <state relative-caret-position="176">
               <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding>
-                <element signature="e#243#244#0" expanded="true" />
+                <element signature="e#179#180#0" expanded="true" />
                 <element signature="e#221#222#0" expanded="true" />
                 <element signature="e#252#253#0" expanded="true" />
                 <element signature="e#307#308#0" expanded="true" />
@@ -188,18 +119,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/School.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+            <state relative-caret-position="469">
+              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
-                <element signature="e#585#586#0" expanded="true" />
-                <element signature="e#621#622#0" expanded="true" />
-                <element signature="e#659#660#0" expanded="true" />
-                <element signature="e#692#693#0" expanded="true" />
-                <element signature="e#745#746#0" expanded="true" />
-                <element signature="e#789#790#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -208,11 +131,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="469">
+              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
               <folding>
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#532#533#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -221,7 +144,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hikaridemo/src/main/java/com/yezp/DataSourceDemoApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="418">
               <caret line="29" column="25" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -283,7 +206,9 @@
         <option value="$PROJECT_DIR$/spring-school-starter/src/main/resources/spring.factories" />
         <option value="$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/School.java" />
         <option value="$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/SchoolProperties.java" />
+        <option value="$PROJECT_DIR$/spring-school-starter/src/main/resources/META-INF/spring.factories" />
         <option value="$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/SchoolAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/spring-school-starter/src/main/resources/META-INF/spring-configuration-metadata.json" />
         <option value="$PROJECT_DIR$/spring-school-starter/pom.xml" />
       </list>
     </option>
@@ -323,8 +248,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -365,10 +288,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="week05_homework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-school-starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="week05_homework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-school-starter" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -390,6 +328,9 @@
     <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\geektime\JAVA-000\Week_05\week05_homework\spring-school-starter\src\main\resources\META-INF" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.yezp" />
     </key>
@@ -471,8 +412,8 @@
     <list>
       <item itemvalue="Application.JdbcMain" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Spring Boot.DataSourceDemoApplication" />
       <item itemvalue="Application.ProxyApp" />
+      <item itemvalue="Spring Boot.DataSourceDemoApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -495,29 +436,29 @@
       <updated>1605441378681</updated>
       <workItem from="1605441382284" duration="159000" />
       <workItem from="1605442261666" duration="8735000" />
-      <workItem from="1605529783865" duration="9563000" />
+      <workItem from="1605529783865" duration="9884000" />
+      <workItem from="1605623811682" duration="1718000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18457000" />
+    <option name="totallyTimeSpent" value="20496000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25383994" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25788197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5168739" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995958" visible="true" weight="0.40674955" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37655416" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -526,21 +467,22 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5004042" side_tool="true" weight="0.5168739" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3285968" />
       <window_info anchor="bottom" id="Run with Parallel Runner" order="14" />
       <window_info anchor="bottom" id="Debug with Parallel Runner" order="15" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="Java Enterprise" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.32983023" />
+      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.32983023" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -755,33 +697,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hikaridemo/src/main/java/com/yezp/DataSourceDemoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hikaridemo/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="909">
           <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -794,10 +713,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/Klass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
+        <state relative-caret-position="176">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding>
-            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
             <element signature="e#221#222#0" expanded="true" />
             <element signature="e#252#253#0" expanded="true" />
             <element signature="e#307#308#0" expanded="true" />
@@ -806,28 +725,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/School.java">
+    <entry file="file://$PROJECT_DIR$/hikaridemo/src/main/java/com/yezp/DataSourceDemoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        <state relative-caret-position="418">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-school-starter/target/classes/com/yezp/Student.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#586#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/resources/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/School.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding>
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/SchoolProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="88">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
           <folding>
             <element signature="e#336#337#0" expanded="true" />
             <element signature="e#364#365#0" expanded="true" />
@@ -843,25 +793,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/java/com/yezp/SchoolAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-44">
+          <caret line="21" column="98" selection-start-line="21" selection-start-column="98" selection-end-line="21" selection-end-column="98" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/resources/spring.factories">
+    <entry file="file://$PROJECT_DIR$/spring-school-starter/src/main/resources/META-INF/spring-configuration-metadata.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="32" lean-forward="true" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+        <state relative-caret-position="220">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-school-starter/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        <state relative-caret-position="240">
+          <caret line="29" selection-start-line="29" selection-end-line="34" selection-end-column="20" />
         </state>
       </provider>
     </entry>

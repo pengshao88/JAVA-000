@@ -19,8 +19,7 @@ public class SchoolAutoConfiguration {
 
     @Bean
     Student student(SchoolProperties schoolProperties) {
-        Student student = new Student();
-        student.create(schoolProperties.getStuId(), schoolProperties.getStuName());
+        Student student = new Student(schoolProperties.getStuId(), schoolProperties.getStuName());
         return student;
     }
 
