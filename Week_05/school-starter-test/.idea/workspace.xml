@@ -1,29 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/../week05_homework/spring-school-starter/pom.xml" description="&lt;/build&gt;" line="35" />
+    <bookmark url="file://$PROJECT_DIR$/../week05_homework/spring-school-starter/pom.xml" description="&lt;/build&gt;" line="37" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b19fc28-d3b8-4a3f-99b3-e10553023bc1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../week05_homework/spring-school-starter/src/main/resources/META-INF/spring.factories" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week05_homework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week05_homework/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week05_homework/spring-school-starter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/src/main/java/com/yezp/SchoolAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week05_homework/spring-school-starter/src/main/java/com/yezp/SchoolAutoConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/src/main/resources/spring.factories" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/target/classes/com/yezp/ISchool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/target/classes/com/yezp/Klass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/target/classes/com/yezp/School.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/target/classes/com/yezp/SchoolAutoConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/target/classes/com/yezp/SchoolProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/target/classes/com/yezp/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/target/classes/spring.factories" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../week05_homework/spring-school-starter/src/main/resources/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/target/spring-school-starter-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week05_homework/spring-school-starter/target/spring-school-starter-1.2-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../week05_homework/spring-school-starter/target/spring-school-starter-1.2-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yezp/SchoolStarterTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="227">
-              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#501#502#0" expanded="true" />
@@ -65,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
-              <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -247,12 +232,12 @@
       <option name="presentableId" value="Default" />
       <updated>1605537915956</updated>
       <workItem from="1605537918858" duration="1799000" />
-      <workItem from="1605623780457" duration="1824000" />
+      <workItem from="1605623780457" duration="2143000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3623000" />
+    <option name="totallyTimeSpent" value="3942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -353,7 +338,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yezp/SchoolStarterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#501#502#0" expanded="true" />
@@ -372,7 +357,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
-          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
         </state>
       </provider>
     </entry>

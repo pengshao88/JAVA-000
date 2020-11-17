@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "com.school.stuId",
+      "type": "java.lang.Integer",
+      "sourceType": "com.yezp.SchoolProperties"
+    },
+    {
+      "name": "com.school.stuName",
+      "type": "java.lang.String",
+      "sourceType": "com.yezp.SchoolProperties"
+    }
+  ]
+}

@@ -29,8 +29,10 @@
         </plugins>
         <resources>
             <resource>
-                <directory>META-INF</directory>
-                <targetPath>META-INF/</targetPath>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>META-INF/*</include>
+                </includes>
             </resource>
         </resources>
     </build>
