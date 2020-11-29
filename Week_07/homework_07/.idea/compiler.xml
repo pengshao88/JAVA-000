@@ -2,29 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="HikariDemo" />
-        <module name="ProxyDemo" />
-        <module name="spring-school-starter" />
-        <module name="JdbcPractice" />
-        <module name="SpringBean" />
+        <module name="init-sql-data" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="HikariDemo" target="8" />
-      <module name="JdbcPractice" target="8" />
-      <module name="ProxyDemo" target="1.5" />
-      <module name="spring-school-starter" target="8" />
-      <module name="SpringBean" target="8" />
+      <module name="init-sql-data" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="HikariDemo" options="-parameters" />
+      <module name="init-sql-data" options="-parameters" />
     </option>
   </component>
 </project>
