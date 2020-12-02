@@ -40,10 +40,10 @@ public class InitSqlDataApplication implements CommandLineRunner {
 //        jdbcManager.addGoodsBatch(goodsList);
 //        log.info("end init goods use : " + (System.currentTimeMillis() - startTime));
 
-        // 插入100万条订单数据
+        // 插入100万条订单数据 ======> 跑了10分钟才插入39万条数据
 //        initDataService.initOrderData();
 
-        jdbcManager.addBatchOrder(); // use 94520
+        jdbcManager.addBatchOrder(); // ======> use 94520ms
         log.info("end insert use : " + (System.currentTimeMillis() - startTime));
     }
 }

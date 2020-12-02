@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/init-sql-data/pom.xml" />
+        <option value="$PROJECT_DIR$/read_write_01/pom.xml" />
       </list>
     </option>
   </component>

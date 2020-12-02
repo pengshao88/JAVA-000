@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/init-sql-data/init-sql-data.iml" filepath="$PROJECT_DIR$/init-sql-data/init-sql-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/read_write_01/read_write_01.iml" filepath="$PROJECT_DIR$/read_write_01/read_write_01.iml" />
     </modules>
   </component>
 </project>
