@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/init-sql-data/init-sql-data.iml" filepath="$PROJECT_DIR$/init-sql-data/init-sql-data.iml" />
       <module fileurl="file://$PROJECT_DIR$/read_write_01/read_write_01.iml" filepath="$PROJECT_DIR$/read_write_01/read_write_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharding-master-slave/sharding-master-slave.iml" filepath="$PROJECT_DIR$/sharding-master-slave/sharding-master-slave.iml" />
     </modules>
   </component>
 </project>

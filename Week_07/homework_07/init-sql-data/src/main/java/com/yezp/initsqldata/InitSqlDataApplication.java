@@ -44,6 +44,7 @@ public class InitSqlDataApplication implements CommandLineRunner {
 //        initDataService.initOrderData();
 
         jdbcManager.addBatchOrder(); // ======> use 94520ms
+                                     // ======> 加上rewriteBatchedStatements=true后 use 59354ms
         log.info("end insert use : " + (System.currentTimeMillis() - startTime));
     }
 }
