@@ -3,6 +3,11 @@
 
 <mapper namespace="com.yezp.read_write_01.mapper.PersonMapper">
 
+<!--	<resultMap id="Person" type="com.yezp.read_write_01.domain.Person">-->
+<!--		<result property="id" column="id"/>-->
+<!--		<result property="name" column="name"/>-->
+<!--	</resultMap>-->
+
 	<select id="getPersonList" resultType="com.yezp.read_write_01.domain.Person">
 		select id, `name` from person
 	</select>

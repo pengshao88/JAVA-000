@@ -17,6 +17,6 @@ public interface PersonMapper {
 
     List<Person> getPersonList();
 
-    int insertPerson(@Param("person") Person person);
+    int insertPerson(Person person);
 
 }
