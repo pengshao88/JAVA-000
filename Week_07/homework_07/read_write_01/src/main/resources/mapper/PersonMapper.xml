@@ -8,7 +8,7 @@
 	</select>
 	
 	<insert id="insertPerson" parameterType="com.yezp.read_write_01.domain.Person">
-		INSERT INTO PERSON(id, `name`) VALUES (#id#, #name#);
+		INSERT INTO PERSON(id, `name`) VALUES (#{id}, #{name});
 	</insert>
 
 </mapper>
