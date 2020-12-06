@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one or more
+  ~ contributor license agreements.  See the NOTICE file distributed with
+  ~ this work for additional information regarding copyright ownership.
+  ~ The ASF licenses this file to You under the Apache License, Version 2.0
+  ~ (the "License"); you may not use this file except in compliance with
+  ~ the License.  You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yezp.shardingdemo.mybatis.mapper.OrderMapper">
+    <resultMap id="baseResultMap" type="com.yezp.shardingdemo.domain.Order">
+        <result column="order_id" property="orderId" jdbcType="BIGINT"/>
+        <result column="user_id" property="userId" jdbcType="BIGINT"/>
+        <result column="status" property="status" jdbcType="SMALLINT"/>
+        <result column="price" property="price" jdbcType="INT"/>
+        <result column="decimal_places" property="decimalPlaces" jdbcType="INT"/>
+        <result column="create_time" property="createTime" jdbcType="BIGINT"/>
+        <result column="update_time" property="updateTime" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <update id="createTableIfNotExists">
+        CREATE TABLE `t_order` (
+            `id` bigint(20) NOT NULL AUTO_INCREMENT,
+            `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
+            `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
+            `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
+            `price` int(20) DEFAULT '0' COMMENT '价格',
+            `decimal_places` int(11) DEFAULT '0' COMMENT '小数位 -100 即price除以100',
+            `create_time` bigint(20) NOT NULL,
+            `update_time` bigint(20) NOT NULL,
+        PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB AUTO_INCREMENT=391773 DEFAULT CHARSET=utf8mb4
+    </update>
+    
+    <update id="truncateTable">
+        TRUNCATE TABLE t_order;
+    </update>
+    
+    <update id="dropTable">
+        DROP TABLE IF EXISTS t_order;
+    </update>
+    
+    <insert id="insert" useGeneratedKeys="true" keyProperty="orderId">
+        INSERT INTO t_order (order_id, user_id, status, price, decimal_places, create_time, update_time) VALUES
+        (#{order_id, jdbcType=BIGINT}, #{user_id,jdbcType=BIGINT}, #{status, jdbcType=SMALLINT},
+         #{price, jdbcType=INT}, #{decimal_places, jdbcType=INT}, #{create_time, jdbcType=BIGINT},
+         #{update_time, jdbcType=BIGINT});
+    </insert>
+    
+    <delete id="delete">
+        DELETE FROM t_order WHERE order_id = #{orderId, jdbcType=BIGINT};
+    </delete>
+
+    <update id="update">
+        UPDATE t_order SET status = #{status, jdbcType=SMALLINT} WHERE order_id = #{order_id, jdbcType=BIGINT}
+    </update>
+    
+    <select id="selectAll" resultMap="baseResultMap">
+        SELECT * FROM t_order;
+    </select>
+    
+    <select id="selectRange" resultMap="baseResultMap">
+        SELECT * FROM t_order WHERE order_id BETWEEN 200000000000000000 AND 400000000000000000
+    </select>
+</mapper>

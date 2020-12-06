@@ -21,7 +21,7 @@ public class DataSourceContextHolder {
     /**
      * 读可能是多个库
      */
-    public static void read() {
+    public static void  read() {
         logger.debug("读操作-----");
         local.set(DataSourceType.read.getType());
     }

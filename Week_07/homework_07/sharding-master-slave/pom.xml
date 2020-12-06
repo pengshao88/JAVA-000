@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.1.RELEASE</version>
+        <version>1.5.17.RELEASE</version> <!-- 2.1.1.RELEASE -->
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.yezp</groupId>
@@ -16,6 +16,7 @@
     <properties>
         <java.version>1.8</java.version>
         <shardingsphere.version>5.0.0-alpha</shardingsphere.version>
+        <hikari-cp.version>2.4.11</hikari-cp.version>
     </properties>
 
     <dependencies>
@@ -30,11 +31,11 @@
             <scope>test</scope>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.springframework</groupId>-->
-<!--            <artifactId>spring-jdbc</artifactId>-->
-<!--            <version>${spring-framework.version}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP-java7</artifactId>
+            <version>${hikari-cp.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -48,7 +49,7 @@
         <dependency>
             <groupId>org.apache.shardingsphere</groupId>
             <artifactId>shardingsphere-jdbc-core</artifactId>
-            <version>5.0.0-alpha</version>
+            <version>${shardingsphere.version}</version>
         </dependency>
 
         <dependency>
@@ -56,16 +57,11 @@
             <artifactId>shardingsphere-jdbc-core-spring-boot-starter</artifactId>
             <version>${shardingsphere.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.apache.shardingsphere</groupId>
             <artifactId>shardingsphere-jdbc-core-spring-namespace</artifactId>
             <version>${shardingsphere.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.shardingsphere</groupId>
-            <artifactId>shardingsphere-jdbc-core-spring-boot-starter</artifactId>
-            <version>5.0.0-alpha</version>
         </dependency>
     </dependencies>
 

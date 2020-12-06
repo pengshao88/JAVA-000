@@ -22,7 +22,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="init-sql-data" options="-parameters" />
       <module name="read_write_01" options="-parameters" />
-      <module name="sharding-master-slave" options="-parameters" />
+      <module name="sharding-master-slave" options="" />
     </option>
   </component>
 </project>
