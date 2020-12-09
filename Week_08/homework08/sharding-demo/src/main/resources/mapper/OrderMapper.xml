@@ -30,7 +30,7 @@
 
     <update id="createTableIfNotExists">
         CREATE TABLE `t_order` (
-            `id` bigint(20) NOT NULL,
+            `id` bigint(20) NOT NULL AUTO_INCREMENT,
             `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
             `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
             `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -51,8 +51,8 @@
     </update>
     
     <insert id="insert" useGeneratedKeys="true" keyProperty="orderId">
-        INSERT INTO t_order (order_id, user_id, status, price, decimal_places, create_time, update_time) VALUES
-        (#{orderId}, #{userId}, #{status}, #{price}, #{decimalPlaces}, #{createTime}, #{updateTime});
+        INSERT INTO t_order (user_id, status, price, decimal_places, create_time, update_time) VALUES
+        (#{userId}, #{status}, #{price}, #{decimalPlaces}, #{createTime}, #{updateTime});
     </insert>
     
     <delete id="delete">

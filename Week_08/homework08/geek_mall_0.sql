@@ -2,7 +2,7 @@ CREATE DATABASE IF NOT EXISTS geek_mall_0 DEFAULT CHARACTER SET utf8mb4 DEFAULT 
 use geek_mall_0;
 
 CREATE TABLE `t_order_0` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -14,7 +14,7 @@ CREATE TABLE `t_order_0` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `t_order_1` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -26,7 +26,7 @@ CREATE TABLE `t_order_1` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `t_order_2` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -38,7 +38,7 @@ CREATE TABLE `t_order_2` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `t_order_3` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -50,7 +50,7 @@ CREATE TABLE `t_order_3` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `t_order_4` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -62,7 +62,7 @@ CREATE TABLE `t_order_4` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `t_order_5` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -74,7 +74,7 @@ CREATE TABLE `t_order_5` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `t_order_6` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -86,7 +86,7 @@ CREATE TABLE `t_order_6` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `t_order_7` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -98,7 +98,7 @@ CREATE TABLE `t_order_7` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `t_order_8` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -110,7 +110,7 @@ CREATE TABLE `t_order_8` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `t_order_9` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -122,7 +122,7 @@ CREATE TABLE `t_order_9` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `t_order_10` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -134,7 +134,7 @@ CREATE TABLE `t_order_10` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `t_order_11` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -146,7 +146,7 @@ CREATE TABLE `t_order_11` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `t_order_12` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -158,7 +158,7 @@ CREATE TABLE `t_order_12` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `t_order_13` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -170,7 +170,7 @@ CREATE TABLE `t_order_13` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `t_order_14` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
@@ -182,7 +182,7 @@ CREATE TABLE `t_order_14` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `t_order_15` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `order_id` bigint(20) NOT NULL COMMENT '订单唯一id',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `status` smallint(2) NOT NULL COMMENT '订单状态 0 未支付 1 已支付 3 取消订单 4 删除订单',
