@@ -3,6 +3,7 @@ package com.yezp.shardingdemo.service.impl;
 import com.yezp.shardingdemo.domain.Order;
 import com.yezp.shardingdemo.mybatis.mapper.OrderMapper;
 import com.yezp.shardingdemo.service.OrderService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +20,6 @@ import java.util.Random;
  * @author yezp
  */
 @Service
-@Primary
 public class OrderServiceImpl implements OrderService {
 
     @Resource

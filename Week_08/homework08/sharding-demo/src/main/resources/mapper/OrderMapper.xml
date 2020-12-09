@@ -19,13 +19,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yezp.shardingdemo.mybatis.mapper.OrderMapper">
     <resultMap id="baseResultMap" type="com.yezp.shardingdemo.domain.Order">
-        <result column="order_id" property="orderId" jdbcType="BIGINT"/>
-        <result column="user_id" property="userId" jdbcType="BIGINT"/>
-        <result column="status" property="status" jdbcType="SMALLINT"/>
-        <result column="price" property="price" jdbcType="INT"/>
-        <result column="decimal_places" property="decimalPlaces" jdbcType="INT"/>
-        <result column="create_time" property="createTime" jdbcType="BIGINT"/>
-        <result column="update_time" property="updateTime" jdbcType="BIGINT"/>
+        <result column="order_id" property="orderId"/>
+        <result column="user_id" property="userId"/>
+        <result column="status" property="status"/>
+        <result column="price" property="price"/>
+        <result column="decimal_places" property="decimalPlaces"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
     </resultMap>
 
     <update id="createTableIfNotExists">
@@ -52,20 +52,18 @@
     
     <insert id="insert" useGeneratedKeys="true" keyProperty="orderId">
         INSERT INTO t_order (order_id, user_id, status, price, decimal_places, create_time, update_time) VALUES
-        (#{order_id, jdbcType=BIGINT}, #{user_id,jdbcType=BIGINT}, #{status, jdbcType=SMALLINT},
-         #{price, jdbcType=INT}, #{decimal_places, jdbcType=INT}, #{create_time, jdbcType=BIGINT},
-         #{update_time, jdbcType=BIGINT});
+        (#{orderId}, #{userId}, #{status}, #{price}, #{decimalPlaces}, #{createTime}, #{updateTime});
     </insert>
     
     <delete id="delete">
-        DELETE FROM t_order WHERE order_id = #{orderId, jdbcType=BIGINT};
+        DELETE FROM t_order WHERE order_id = #{orderId};
     </delete>
 
     <update id="update">
-        UPDATE t_order SET status = #{status, jdbcType=SMALLINT} WHERE order_id = #{order_id, jdbcType=BIGINT}
+        UPDATE t_order SET status = #{status} WHERE order_id = #{orderId}
     </update>
     
-    <select id="selectAll" resultType="com.yezp.shardingdemo.domain.Order">
+    <select id="selectAll" resultMap="baseResultMap">
         SELECT * FROM t_order;
     </select>
     

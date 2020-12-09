@@ -25,14 +25,16 @@ public class ShardingDemoApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("-------------- Process Success Begin ---------------");
-        List<Long> orderIds = orderService.insertData();
+        orderService.insertData();
         orderService.printData();
         for (Order order : orderService.selectAll()) {
-            if (order.getOrderId() % 2 == 0)
+            if (order.getOrderId() % 2 == 0) {
+                order.setStatus(3);
                 orderService.updateData(order);
+            }
         }
         orderService.printData();
-        orderService.deleteData(orderIds);
+//        orderService.deleteData(orderIds);
         orderService.printData();
         System.out.println("-------------- Process Success Finish --------------");
     }
