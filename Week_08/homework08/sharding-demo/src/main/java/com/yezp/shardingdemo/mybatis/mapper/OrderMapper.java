@@ -1,7 +1,10 @@
 package com.yezp.shardingdemo.mybatis.mapper;
 
-import com.yezp.shardingdemo.mybatis.repository.OrderRepository;
+import com.yezp.shardingdemo.domain.Order;
 import org.apache.ibatis.annotations.Mapper;
+
+import java.sql.SQLException;
+import java.util.List;
 
 /**
  * Description:
@@ -10,6 +13,40 @@ import org.apache.ibatis.annotations.Mapper;
  * @author yezp
  */
 @Mapper
-public interface OrderMapper extends OrderRepository {
+public interface OrderMapper {
+
+    /**
+     * insert data.
+     *
+     * @param entity entity
+     * @return generated primary key
+     * @throws SQLException SQL exception
+     */
+    void insert(Order entity) throws SQLException;
+
+    /**
+     * update data.
+     *
+     * @param entity entity
+     * @return generated primary key
+     * @throws SQLException SQL exception
+     */
+    void update(Order entity) throws SQLException;
+
+    /**
+     * Delete data.
+     *
+     * @param primaryKey primaryKey
+     * @throws SQLException SQL exception
+     */
+    void delete(long primaryKey) throws SQLException;
+
+    /**
+     * Select all data.
+     *
+     * @return all data
+     * @throws SQLException SQL exception
+     */
+    List<Order> selectAll() throws SQLException;
 
 }

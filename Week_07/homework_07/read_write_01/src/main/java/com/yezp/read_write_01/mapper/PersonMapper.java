@@ -2,7 +2,6 @@ package com.yezp.read_write_01.mapper;
 
 import com.yezp.read_write_01.domain.Person;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 

@@ -12,8 +12,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 import java.util.List;
 
-@ComponentScan("com.yezp.shardingdemo.mybatis")
-@MapperScan(basePackages = "com.yezp.shardingdemo.mybatis.repository")
 @SpringBootApplication(exclude = JtaAutoConfiguration.class)
 public class ShardingDemoApplication implements CommandLineRunner {
 
