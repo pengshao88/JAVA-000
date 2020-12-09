@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7c834c47-cefd-407c-a0e0-85e85c9c1f66" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_08/homework08/.idea/libraries/Maven__org_mybatis_mybatis_3_4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_08/homework08/.idea/libraries/Maven__org_mybatis_mybatis_3_4_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_08/homework08/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_08/homework08/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_08/homework08/sharding-demo/src/main/java/com/yezp/shardingdemo/ShardingDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_08/homework08/sharding-demo/src/main/java/com/yezp/shardingdemo/ShardingDemoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_08/homework08/sharding-demo/src/main/java/com/yezp/shardingdemo/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_08/homework08/sharding-demo/src/main/java/com/yezp/shardingdemo/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_08/homework08/sharding-demo/src/main/resources/META-INF/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_08/homework08/sharding-demo/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_08/homework08/sharding-demo/src/main/resources/META-INF/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_08/homework08/sharding-demo/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_08/homework08/sharding-demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_08/homework08/sharding-demo/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/init-sql-data/target/" />

@@ -31,7 +31,8 @@ public class OrderServiceImpl implements OrderService {
         Random random = new Random();
         for (long i = 1; i <= 10; i++) {
             Order order = new Order();
-            order.setOrderId(i);
+            long orderId = random.nextInt(1000000000) + 1;
+            order.setOrderId(orderId);
             order.setUserId(random.nextInt(100) + 1);
             order.setStatus(0);
             order.setPrice(10 + random.nextInt(10000) + 1);
@@ -39,7 +40,7 @@ public class OrderServiceImpl implements OrderService {
             order.setCreateTime(System.currentTimeMillis());
             order.setUpdateTime(System.currentTimeMillis());
             orderMapper.insert(order);
-            result.add(i);
+            result.add(orderId);
         }
 
         return result;
