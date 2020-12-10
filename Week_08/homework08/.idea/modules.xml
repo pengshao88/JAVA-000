@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/2pc-xa-example/2pc-xa-example.iml" filepath="$PROJECT_DIR$/2pc-xa-example/2pc-xa-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/homework08.iml" filepath="$PROJECT_DIR$/.idea/homework08.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharding-demo/sharding-demo.iml" filepath="$PROJECT_DIR$/sharding-demo/sharding-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharding-xa/sharding-xa.iml" filepath="$PROJECT_DIR$/sharding-xa/sharding-xa.iml" />
     </modules>
   </component>
 </project>

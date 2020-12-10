@@ -8,15 +8,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sharding-demo" />
+        <module name="2pc-xa-example" />
+        <module name="sharding-xa" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="2pc-xa-example" target="1.8" />
       <module name="sharding-demo" target="8" />
+      <module name="sharding-xa" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="2pc-xa-example" options="" />
       <module name="sharding-demo" options="" />
+      <module name="sharding-xa" options="" />
     </option>
   </component>
 </project>
