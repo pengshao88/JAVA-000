@@ -36,6 +36,28 @@
             <groupId>org.apache.shardingsphere</groupId>
             <artifactId>shardingsphere-transaction-xa-core</artifactId>
             <version>${shardingsphere.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.atomikos</groupId>
+                    <artifactId>transactions-jdbc</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.atomikos</groupId>
+                    <artifactId>transactions-jta</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.atomikos</groupId>
+            <artifactId>transactions-jdbc</artifactId>
+            <version>4.0.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.atomikos</groupId>
+            <artifactId>transactions-jta</artifactId>
+            <version>4.0.6</version>
         </dependency>
 
         <dependency>
