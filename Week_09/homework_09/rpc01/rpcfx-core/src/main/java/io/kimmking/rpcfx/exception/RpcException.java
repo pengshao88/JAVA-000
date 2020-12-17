@@ -11,7 +11,7 @@ public class RpcException extends RuntimeException {
     private Throwable cause = null;
     private int errorCode;
 
-    private String errorMsg = ""; // 客户描述
+    private String errorMsg = ""; // 异常描述
 
     public RpcException(Throwable e) {
         cause = e;
