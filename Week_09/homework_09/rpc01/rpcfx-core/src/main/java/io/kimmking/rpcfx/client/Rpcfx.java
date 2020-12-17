@@ -5,10 +5,14 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.parser.ParserConfig;
 import io.kimmking.rpcfx.api.RpcfxRequest;
 import io.kimmking.rpcfx.api.RpcfxResponse;
+import io.kimmking.rpcfx.exception.RpcException;
+import io.kimmking.rpcfx.util.HttpClientUtil;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationHandler;
@@ -17,12 +21,14 @@ import java.lang.reflect.Proxy;
 
 public final class Rpcfx {
 
+    private final static Logger logger = LoggerFactory.getLogger(Rpcfx.class);
+
     static {
-        ParserConfig.getGlobalInstance().addAccept("io.kimmking");
+        ParserConfig.getGlobalInstance().addAccept("io.kimmking.rpcfx.demo.api.User");
+        ParserConfig.getGlobalInstance().addAccept("io.kimmking.rpcfx.demo.api.Order");
     }
 
     public static <T> T create(final Class<T> serviceClass, final String url) {
-
         // 0. 替换动态代理 -> AOP   动态代理改成字节码生成
         return (T) Proxy.newProxyInstance(Rpcfx.class.getClassLoader(),
                 new Class[]{serviceClass}, new RpcfxInvocationHandler(serviceClass, url));
@@ -55,24 +61,36 @@ public final class Rpcfx {
 
             // 这里判断response.status，处理异常
             // 考虑封装一个全局的RpcfxException
+            if (!response.isSuccess()) {
+                RpcException rpcException = response.getException();
+                logger.error("Rpcfx fail errorCode:{}, errorMsg:{}, e:{}",
+                        rpcException.getErrorCode(), rpcException.getErrorMsg(), rpcException.getCause());
+                throw rpcException.getCause();
+            }
 
             return JSON.parse(response.getResult().toString());
         }
 
         private RpcfxResponse post(RpcfxRequest req, String url) throws IOException {
             String reqJson = JSON.toJSONString(req);
-            System.out.println("req json: "+reqJson);
-
-            // 1.可以复用client
-            // 2.尝试使用httpclient或者netty client
-            OkHttpClient client = new OkHttpClient();
-            final Request request = new Request.Builder()
-                    .url(url)
-                    .post(RequestBody.create(JSONTYPE, reqJson))
-                    .build();
-            String respJson = client.newCall(request).execute().body().string();
-            System.out.println("resp json: "+respJson);
+            System.out.println("req json: " + reqJson);
+            String respJson = HttpClientUtil.httpPostJson(reqJson, url);
+            System.out.println("resp json: " + respJson);
             return JSON.parseObject(respJson, RpcfxResponse.class);
+
+//            String reqJson = JSON.toJSONString(req);
+//            System.out.println("req json: "+reqJson);
+//
+//            // 1.可以复用client
+//            // 2.尝试使用httpclient或者netty client
+//            OkHttpClient client = new OkHttpClient();
+//            final Request request = new Request.Builder()
+//                    .url(url)
+//                    .post(RequestBody.create(JSONTYPE, reqJson))
+//                    .build();
+//            String respJson = client.newCall(request).execute().body().string();
+//            System.out.println("resp json: "+respJson);
+//            return JSON.parseObject(respJson, RpcfxResponse.class);
         }
     }
 }

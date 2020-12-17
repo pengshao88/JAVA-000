@@ -1,12 +1,14 @@
 package io.kimmking.rpcfx.api;
 
+import io.kimmking.rpcfx.exception.RpcException;
+
 public class RpcfxResponse {
 
     private Object result;
 
-    private boolean status;
+    private boolean success;
 
-    private Exception exception;
+    private RpcException exception;
 
     public Object getResult() {
         return result;
@@ -16,19 +18,19 @@ public class RpcfxResponse {
         this.result = result;
     }
 
-    public boolean isStatus() {
-        return status;
+    public boolean isSuccess() {
+        return success;
     }
 
-    public void setStatus(boolean status) {
-        this.status = status;
+    public void setSuccess(boolean success) {
+        this.success = success;
     }
 
-    public Exception getException() {
+    public RpcException getException() {
         return exception;
     }
 
-    public void setException(Exception exception) {
+    public void setException(RpcException exception) {
         this.exception = exception;
     }
 }

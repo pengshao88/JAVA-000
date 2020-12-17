@@ -40,13 +40,13 @@ public class RpcfxServerApplication {
 		return new DemoResolver();
 	}
 
-	// 能否去掉name
-	@Bean(name = "io.kimmking.rpcfx.demo.api.UserService")
+	// 去掉name
+	@Bean
 	public UserService createUserService(){
 		return new UserServiceImpl();
 	}
 
-	@Bean(name = "io.kimmking.rpcfx.demo.api.OrderService")
+	@Bean
 	public OrderService createOrderService(){
 		return new OrderServiceImpl();
 	}
