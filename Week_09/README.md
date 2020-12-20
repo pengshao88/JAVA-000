@@ -6,4 +6,15 @@ https://github.com/LiveOrange/JAVA-000/commit/8ed7b49ba6afbae8922eec0a1e4aed983c
 
 自己实现了全局RpcException
 
-作业2： doing...
+作业2：dubbo-hmily-demo
+结合dubbo+hmily，实现一个TCC外汇交易处理，代码提交到github： 
+	1）用户A的美元账户和人民币账户都在A库，使用1美元兑换7人民币； 
+	2）用户B的美元账户和人民币账户都在B库，使用7人民币兑换1美元； 
+	3）设计账户表，冻结资产表，实现上述两个本地事务的分布式事务。
+	
+摘抄了江伟楷同学的作业，账户表和资产表设计在了一起，整个流程下来，有点不是太明白。
+try的时候，扣除、冻结了双方的金额。
+confirm和concel的时候，是根据传入本地事务的DO去反向更新数据库？
+
+参考了江同学的代码之后，对hmily使用有了新的认识，接下来，自己再去重构。
+
