@@ -34,9 +34,9 @@ public class RpcfxInvoker {
             return response;
         } catch (Exception e) {
             // 2.封装一个统一的RpcfxException
-            RpcException exception = new RpcException(e);
+            RpcException exception = new RpcException();
             exception.setErrorCode(ResponseCode.CLASS_NOT_FOUND.getCode());
-            exception.setErrorMsg("InvokerFactory getInvoker fail.");
+            exception.setErrorMsg("InvokerFactory getInvoker fail. e:" + e.getMessage());
             response.setException(exception);
             response.setSuccess(false);
             return response;

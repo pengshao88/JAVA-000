@@ -63,12 +63,13 @@ public final class Rpcfx {
             // 考虑封装一个全局的RpcfxException
             if (!response.isSuccess()) {
                 RpcException rpcException = response.getException();
-                logger.error("Rpcfx fail errorCode:{}, errorMsg:{}, e:{}",
-                        rpcException.getErrorCode(), rpcException.getErrorMsg(), rpcException.getCause());
-                throw rpcException.getCause();
+                logger.error("Rpcfx fail errorCode:{}, errorMsg:{}",
+                        rpcException.getErrorCode(), rpcException.getErrorMsg());
+                return rpcException.getErrorMsg();
+                // throw new Exception(rpcException.getErrorMsg());
             }
 
-            return JSON.parse(response.getResult().toString());
+            return response.getResult();
         }
 
         private RpcfxResponse post(RpcfxRequest req, String url) throws IOException {

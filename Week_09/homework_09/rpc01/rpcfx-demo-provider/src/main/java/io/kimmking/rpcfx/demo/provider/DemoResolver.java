@@ -21,9 +21,13 @@ public class DemoResolver implements RpcfxResolver, ApplicationContextAware {
     @Override
     public Object resolve(String serviceClass) {
         Object bean = beanMap.get(serviceClass);
-        if (bean == null) {
-            bean = applicationContext.getBean(serviceClass);
-            beanMap.putIfAbsent(serviceClass, bean);
+        try {
+            if (bean == null) {
+                bean = applicationContext.getBean(Class.forName(serviceClass));
+                beanMap.putIfAbsent(serviceClass, bean);
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
 
         return bean;
