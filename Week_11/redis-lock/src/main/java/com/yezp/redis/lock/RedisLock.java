@@ -61,11 +61,10 @@ public class RedisLock {
                 }
 
                 try {
-                    Thread.sleep(50);
+                    Thread.sleep(1);
                 } catch (InterruptedException e) {
                     logger.error("Thread.sleep error", e);
                 }
-
             }
         } finally {
             jedis.close();

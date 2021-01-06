@@ -12,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
 
 
 @SpringBootApplication
@@ -26,31 +27,35 @@ public class RedisLockApplication implements CommandLineRunner {
     @Autowired
     RedisLock redisLock;
 
-    int count = 0;
+    int count = 100;
 
     @Override
     public void run(String... args) throws Exception {
-        int clientCount =1000;
-        CountDownLatch countDownLatch = new CountDownLatch(clientCount);
+        int clientCount = 200;
+//        CountDownLatch countDownLatch = new CountDownLatch(clientCount);
 
         ExecutorService executorService = Executors.newFixedThreadPool(clientCount);
-        long start = System.currentTimeMillis();
-        for (int i = 0;i<clientCount;i++){
+//        long start = System.currentTimeMillis();
+        // 通过Snowflake算法获取唯一的ID字符串
+        final String id = String.valueOf(IdUtil.generateId());
+        for (int i = 0; i < clientCount; i++) {
             executorService.execute(() -> {
-
-                //通过Snowflake算法获取唯一的ID字符串
-                String id = String.valueOf(IdUtil.generateId());
                 try {
-                    redisLock.lock(id);
-                    count++;
-                }finally {
+                    if (redisLock.lock(id)) {
+                        if (count <= 0)
+                            return;
+
+                        count--;
+                        logger.info("count:{}", count);
+                    }
+                } finally {
                     redisLock.unlock(id);
                 }
-                countDownLatch.countDown();
+//                countDownLatch.countDown();
             });
         }
-        countDownLatch.await();
-        long end = System.currentTimeMillis();
-        logger.info("执行线程数:{},总耗时:{},count数为:{}", clientCount, end - start, count);
+//        countDownLatch.await();
+//        long end = System.currentTimeMillis();
+//        logger.info("执行线程数:{},总耗时:{},count数为:{}", clientCount, end - start, count);
     }
 }
