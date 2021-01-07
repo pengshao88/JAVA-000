@@ -27,12 +27,12 @@ Redis sentinel 配置：
    sentinel monitor mymaster 127.0.0.1 6379 1      #监听6379主库  
    sentinel down-after-milliseconds mymaster 5000  #5秒后选举新的主库  
    sentinel failover-timeout mymaster 15000        #配置所有slaves指向新的master所需的最大时间
-3、拷贝两份sentinel.conf文件，将端口分别改为26380 26381 分别放在6380、6381目录下； 
-4、在6379目录下执行：redis-server --service-install sentinel.conf --loglevel verbose  --service-name sentinel26379 --sentinel  
+3、拷贝两份sentinel.conf文件，将端口分别改为26380 26381 分别放在6380、6381目录下  
+4、在6379目录下执行：redis-server --service-install sentinel.conf --loglevel verbose  --service-name sentinel26379 --sentinel    
    然后再执行redis-server --service-start --service-name sentinel26379  
-5、分别在6380 6381 执行上述两条命令（修改redis服务名称）
-6、cmd下执行：redis-cli.exe -p 26379，登录到sentinel26379
-   info sentinel 查看sentinel信息，可以看到两个从库，3个哨兵  
+5、分别在6380 6381 执行上述两条命令（修改redis服务名称）  
+6、cmd下执行：redis-cli.exe -p 26379，登录到sentinel26379  
+   info sentinel 查看sentinel信息，可以看到两个从库，3个哨兵    
 7、将6379服务shutdown，5秒后，info sentinel 可以看到mymaster 自动变成了6380  
 
 
@@ -41,7 +41,7 @@ Redis 集群配置：
 1、分别把三个redis.windows.conf 文件中的配置修改：  
    cluster-enabled yes  
    cluster-config-file nodes-6379.conf  
-   cluster-node-timeout 15000
+   cluster-node-timeout 15000  
 2、下载ruby，ruby今天没有下载完成，阻塞了 o(╥﹏╥)o  
 
 
