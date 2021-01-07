@@ -20,9 +20,30 @@ Redis主从配置：
    
    
 Redis sentinel 配置：  
-目前百度了这个文章：https://www.cnblogs.com/SecondSun/p/11270547.html   
-明天继续把 sentinel高可用，Cluster集群 配置完，并争取把选做题demo也执行了。 
+参考文章：https://www.cnblogs.com/SecondSun/p/11270547.html   
+1、在主从的基础上再拷贝一份Redis-x64-3.2.100_6381；  
+2、配置sentinel.conf文件，配置内容：  
+   port 26379                                      #哨兵节点端口  
+   sentinel monitor mymaster 127.0.0.1 6379 1      #监听6379主库  
+   sentinel down-after-milliseconds mymaster 5000  #5秒后选举新的主库  
+   sentinel failover-timeout mymaster 15000        #配置所有slaves指向新的master所需的最大时间
+3、拷贝两份sentinel.conf文件，将端口分别改为26380 26381 分别放在6380、6381目录下； 
+4、在6379目录下执行：redis-server --service-install sentinel.conf --loglevel verbose  --service-name sentinel26379 --sentinel  
+   然后再执行redis-server --service-start --service-name sentinel26379  
+5、分别在6380 6381 执行上述两条命令（修改redis服务名称）
+6、cmd下执行：redis-cli.exe -p 26379，登录到sentinel26379
+   info sentinel 查看sentinel信息，可以看到两个从库，3个哨兵  
+7、将6379服务shutdown，5秒后，info sentinel 可以看到mymaster 自动变成了6380  
+
 
 Redis 集群配置：  
 参考文章：https://www.cnblogs.com/thirteen-zxh/p/9187875.html  
+1、分别把三个redis.windows.conf 文件中的配置修改：  
+   cluster-enabled yes  
+   cluster-config-file nodes-6379.conf  
+   cluster-node-timeout 15000
+2、下载ruby，ruby今天没有下载完成，阻塞了 o(╥﹏╥)o  
+
+
+明天继续......
    
